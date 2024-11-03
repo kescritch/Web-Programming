@@ -1,0 +1,42 @@
+<!--
+This file is part B of project 2. This file acts as a calculator. 
+-->
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header> 
+            <h1>Calculator</h1>
+        </header>
+
+        <section class = "center">
+            <div id="enter"></div>
+            <input type="number" id = "int1">
+            <select name="operations" id="operations">
+                <option value ="+">+</option>
+                <option value = "-">-</option>
+                <option value = "*">*</option>
+                <option value = "/">/</option>
+                <option value = "^">^</option>
+                <option value = "√">&#8730</option>
+           </select>
+           <input type="number" id="int2"> = 
+
+           <input type="text" readonly id = "output">
+           <button id="calculate">Calculate</button>
+
+           <div>
+            <ul>
+              
+            </ul>
+         </div>
+
+        </section>
+        
+        <script src="calculator.js" type="text/javascript"></script>
+    </body>
+</html>

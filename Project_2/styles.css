@@ -1,0 +1,29 @@
+/*
+This file is the css code that runs all of my pages. 
+*/
+body{
+    background-color: rgb(68, 68, 68);
+    color: white;
+}
+header{
+    text-align: center;
+}
+.center{
+    transform: 0,-50%;
+    text-align: center;
+}
+
+.fullPage{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+img{
+    height: 300px;
+    width: 600px;
+}
+ul{
+    list-style-type: none;
+}
