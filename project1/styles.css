@@ -1,0 +1,81 @@
+/*
+Kyle Scritchfield
+9/25/2024
+CSC 390 
+
+This file is the main css file for project 1
+*/
+
+div{
+  background-color: rgb(31, 85, 21);
+}
+body{
+  background-color: rgb(31, 85, 21);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  background-color: rgb(8, 40, 0);
+  padding: 3px;
+  border-style: solid;
+  border-color: black;
+  color: rgb(255, 255, 255);
+}
+
+#back_arrow{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 48%;
+  top: 100%;
+}
+section {
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  margin: 10px;
+  border-style: solid;
+  border-color: black;
+}
+div {
+  margin: 0px;
+  padding: 10px;
+}
+
+div.description {
+  background-color: white;
+  width: 100%;
+  text-align: center;
+}
+
+div.blocks {
+  background-color: rgb(159, 159, 159);
+  display: inline-block;
+  margin: 3%;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  border-style:outset;
+}
+
+div.list {
+  background-color: white;
+  list-style-position: inside;
+  text-align: left;
+  width: auto;
+  height: auto;
+  position: relative;
+  top: 100%;
+  right: 0%;
+}
+
+table {
+  width: 100%;
+}
+
+#image {
+  width: auto;
+  height: 400px;
+}
