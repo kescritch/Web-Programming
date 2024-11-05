@@ -1,12 +1,7 @@
 <?php
+    session_start();
 
-    if($login != true)
+    if($_SESSION["login"] != true)
     {
-        echo "false";
-        //header("./views/login.view.php");
+        header('Location: login.view.php');
     }
-
-
-
-    require "./views/index.view.php";
-    require "login.php";

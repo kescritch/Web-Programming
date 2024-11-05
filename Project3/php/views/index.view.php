@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-    <link rel="stylesheet" href="..\css\styles.css">
+    <link rel="stylesheet" href="..\..\css\styles.css">
     <title>Index</title>
 </head>
 
@@ -12,8 +12,8 @@
 
     <section>
         <ul>
-            <li><a href="login.html">Login</a></li>
-            <li></li>
+            <li><a href="login.view.php">Login</a></li>
+            <li><a href="../logout.php">Logout</a></li>
             <li></li>
             <li></li>
             <li></li>
@@ -24,3 +24,7 @@
 </body>
 
 </html>
+
+<?php
+require $_SERVER['DOCUMENT_ROOT'] . "\Project3\php\index.php";
+?>
