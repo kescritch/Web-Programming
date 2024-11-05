@@ -11,20 +11,19 @@
     </header>
 
     <section>
-        <ul>
-            <li><a href="login.view.php">Login</a></li>
-            <li><a href="../logout.php">Logout</a></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+            <ul>
+                <li><a href="login.view.php">Login</a></li>
+                <li><a href="../logout.php">Logout</a></li>
+                <li><a href="date.view.php">Date</a></li>
+                <li><a href="rps.view.php">Play Rock Paper Scissors</a></li>
+                <li><a href="repeater.view.php">Repeater</a></li>
+            </ul>
+        </form>
     </section>
 </body>
 
 </html>
 
 <?php
-require $_SERVER['DOCUMENT_ROOT'] . "\Project3\php\index.php";
+    require("../index.php")
 ?>

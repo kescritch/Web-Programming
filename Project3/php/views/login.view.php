@@ -10,7 +10,7 @@
   </header>
 
   <section>
-    <form action="login.view.php" method="post">
+    <form action="../login.php" method="post">
         <div><input type="text" name = "username" placeholder="Username"></div>
         <div><input type="password" name = "password" placeholder="Password"></div>
         <div><button name = "enter">Enter</button></div>
@@ -20,7 +20,3 @@
 </body>
 
 </html>
-
-<?php
-require"..\login.php";
-?>
