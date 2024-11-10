@@ -10,3 +10,6 @@
     
 </body>
 </html>
+<?php
+    require("../background/date.php");
+?>
