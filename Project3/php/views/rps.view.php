@@ -8,12 +8,12 @@
 <body>
     <header><h1>Rock Paper Scissors</h1></header>  
 
-    <form action="../rps.php" method="post">
-    <input type="radio" id="rock" name="rps" value="rock">
+    <form action="../background/rps.php" method="post">
+    <input type="radio" id="rock" name="rps" value="Rock">
   <label for="rock">Rock</label><br>
-  <input type="radio" id="paper" name="rps" value="paper">
+  <input type="radio" id="paper" name="rps" value="Paper">
   <label for="paper">Paper</label><br>  
-  <input type="radio" id="scissors" name="rps" value="scissors">
+  <input type="radio" id="scissors" name="rps" value="Scissors">
   <label for="scissors">Scissors</label><br><br>
   <div><button name = "submit">Submit</button></div>
 

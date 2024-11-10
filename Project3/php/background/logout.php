@@ -2,4 +2,4 @@
     session_start();
     $_SESSION["login"] = false;
 
-    header('Location: ../background/login.php');
+    header("Location: ../views/login.view.php");

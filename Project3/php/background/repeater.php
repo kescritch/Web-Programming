@@ -6,7 +6,7 @@
 
     while($count < $number)
     {
-        echo("\n Web Programming is fun!");
+        echo("\n Web Programming is fun! <br>");
         $count++;
 
     }
