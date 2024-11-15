@@ -1,6 +1,15 @@
 html{
     text-align: center;
+    background-color: white;
+}
+
+header{
+    background-color:dodgerblue
 }
 ul{
+    display: inline-block;
     text-align: left;
+}
+div.link{
+    padding-bottom: 15px;
 }

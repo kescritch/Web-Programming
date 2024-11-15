@@ -1,3 +1,5 @@
+<!-- Background file that prints the date and time. -->
+
 <?php 
     include("login.php");
 
