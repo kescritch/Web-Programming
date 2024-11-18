@@ -1,3 +1,4 @@
+<!-- The computer part of the rock paper scissors page -->
 <?php
     $computer;
     $rand = rand(1,3);

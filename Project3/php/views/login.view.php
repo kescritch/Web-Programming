@@ -1,3 +1,4 @@
+<!-- The viewing page for the index -->
 <!DOCTYPE html>
 <head>
   <title>Login Page</title>

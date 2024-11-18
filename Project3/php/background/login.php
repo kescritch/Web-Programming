@@ -1,3 +1,4 @@
+<!-- Background file that contains the login class -->
 <?php
     session_start();
 
@@ -33,11 +34,11 @@
 
         function logUserIn($username)
         {
-            $_SESSION["login"] == true;
+            $_SESSION["login"] = true;
         }
         function logout()
         {
-            return;
+            return $_SESSION["login"] = false;
         }
         function redirectToLogin()
         {
@@ -47,23 +48,7 @@
 
     $obj = new UserAuthenticator;
 
-    if(!$obj -> isLoggedin())
-    {
-        $obj->redirectToLogin();
 
-        if(isset($_POST["enter"])) 
-        {
-            $username = $_POST["username"];
-            $password = $_POST["password"];
-
-            if($obj-> authenticate($username,$password))
-            {
-                $obj->logUserIn($username);
-                header("Location: ../views/index.view.php");
-
-            }
-        }
-    }
     
 
 

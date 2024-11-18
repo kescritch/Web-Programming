@@ -1,3 +1,4 @@
+<!-- Background file for the repeater file. Picks a random number and prints a sentence out a random amout of times -->
 <?php 
     include("login.php");
 
