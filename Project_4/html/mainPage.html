@@ -1,0 +1,52 @@
+<!--
+Outputs: 
+
+    add game button - needs to make a popup 
+    remove game button - needs to make a popup
+
+    sort dropdown - values: all,completed,inProgress,notStarted
+
+
+Inputs: 
+
+    Title, Status, Date
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="..\css\styles.css">
+    <title>Main Page</title>
+</head>
+<body>
+    <header><h1>Games</h1></header>
+
+    <!-- add game, remove game, filter-->
+    <section class = "flex">
+        <form id = "selection" class = "block">
+            <div class = "sec"> <button>Add Game</button></div>
+            <div class = "sec"> <button>Remove Game</button></div>
+            <div class = "sec"> 
+                Filter: 
+                <select name="filter" id="filter">
+                    <option value = "all">All</option>
+                    <option value ="completed">Completed</option>
+                    <option value = "inProgress">In Progress</option>
+                    <option value = "notStarted">Not Started</option>
+                </select>
+            </div>
+        </form>
+    </section>
+
+    <!--    flexbox container for the data output -->
+    <section class = "flex">
+        <div class = "block">
+            <div id = "title" class = "sec">Title: </div>
+            <div id = "status" class = "sec">Status: </div>
+            <div id = "date" class = "sec">Date: </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
