@@ -16,6 +16,8 @@ Inputs:
 <html lang="en">
 <head>
     <link rel="stylesheet" href="..\css\styles.css">
+    <script type="text/javascript" src="../js/mainPopups.js"></script>
+
     <title>Main Page</title>
 </head>
 <body>
@@ -24,8 +26,8 @@ Inputs:
     <!-- add game, remove game, filter-->
     <section class = "flex">
         <form id = "selection" class = "block">
-            <div class = "sec"> <button>Add Game</button></div>
-            <div class = "sec"> <button>Remove Game</button></div>
+            <div class = "sec"> <button onclick="add()">Add Game</button></div>
+            <div class = "sec" id="remove"> <button>Remove Game</button></div>
             <div class = "sec"> 
                 Filter: 
                 <select name="filter" id="filter">
