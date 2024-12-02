@@ -11,7 +11,7 @@
   </header>
 
   <section>
-    <form action="../background/login.php" method="post">
+    <form action="../background/login_page_runner.php" method="post">
         <div><input type="text" name = "username" placeholder="Username"></div>
         <div><input type="password" name = "password" placeholder="Password"></div>
         <div><button name = "enter">Enter</button></div>

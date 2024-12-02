@@ -1,7 +1,7 @@
 <!-- Background file that prints the date and time. -->
 
 <?php 
-    include("login.php");
+    include("authenticator.php");
 
     $date = date("m/d/Y");
     $time = date("h:ia");

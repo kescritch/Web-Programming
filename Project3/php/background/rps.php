@@ -1,6 +1,6 @@
 <!-- User input for the rockpaper scissors page. Gets user input and compares it to the computer. -->
 <?php
-    include("login.php");
+
     include("../views/rps.view.php");
     include("playrps.php");
 
