@@ -1,0 +1,52 @@
+html{
+    background-color: white;
+    text-align: center;
+}
+
+input.flex{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+    width: 100%;
+}
+
+div.sec{
+    /*background-color: white;*/
+
+    flex-basis: 100%;
+
+    border-right: 1px solid black;
+    padding-left: 10px;
+}
+#selection{
+    height: 25px;
+    text-align: center;
+}
+
+.end{
+    border-right: 0px solid black;
+}
+
+
+.block{
+    display: flex;
+    justify-content: left;
+
+    background-color: rgb(53, 54, 58);
+    color: black;
+
+    border-width: 2px;
+    border-style: inset; 
+
+    height: 100px;
+    width: 100%;
+
+    margin: 5px;
+
+
+}
+
+
+
