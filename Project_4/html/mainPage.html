@@ -1,22 +1,15 @@
 <!--
 Outputs: 
+    add game button - need to add id's Title, Status, Date to php didnt make form link yet (form on line 57) clear the input box too
+    remove game button - need to make the html for popup (line 73)
 
-    add game button - needs to make a popup 
-    remove game button - needs to make a popup
-
-    sort dropdown - values: all,completed,inProgress,notStarted
-
-
-Inputs: 
-
-    Title, Status, Date
+    sort dropdown - values: all,completed,inProgress,notStarted prob can use js
 -->
 
 <!DOCTYPE html>
-<html lang="en">
 <head>
-    <link rel="stylesheet" href="..\css\styles.css">
-    <script type="text/javascript" src="../js/mainPopups.js"></script>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script defer src="../js/mainPopups.js"></script>
 
     <title>Main Page</title>
 </head>
@@ -25,20 +18,60 @@ Inputs:
 
     <!-- add game, remove game, filter-->
     <section class = "flex">
-        <form id = "selection" class = "block">
-            <div class = "sec"> <button onclick="add()">Add Game</button></div>
-            <div class = "sec" id="remove"> <button>Remove Game</button></div>
+        <div id = "selection" class = "block">
+            <div class = "sec"> <button data-popup-target = "#addGame">Add Game</button></div>
+            <div class = "sec" id="remove"> <button data-popup-target = "#removeGame">Remove Game</button></div>
             <div class = "sec"> 
                 Filter: 
-                <select name="filter" id="filter">
+                <select name = "filter" id = "filter">
                     <option value = "all">All</option>
                     <option value ="completed">Completed</option>
                     <option value = "inProgress">In Progress</option>
                     <option value = "notStarted">Not Started</option>
                 </select>
             </div>
-        </form>
+        </div>
     </section>
+
+    <!-- Add Game Pop up -->
+    <div class = "popup" id = "addGame">
+        <div class="pop-header">
+            <h1>Add Game</h1>
+            <button data-popup-close class="close">&times;</button>
+        </div>
+
+        <section class = "flex popup-pad" id="labels">
+            <div id = "selection" class = "block">
+                <div class = "sec">Game Name</div>
+                <div class = "sec">Status</div>
+                <div class = "sec">Date</div>
+            </div>
+        </section>
+    
+        <section class = "flex popup-pad" id="inputs">
+            <form id = "selection" class = "block">
+                <div class = "sec"><input id="name" type="text" placeholder="Game Name"></div>
+    
+                <div class = "sec">                
+                    <select name="status" id="status">
+                        <option value ="completed" onclick="check()">Completed</option>
+                        <option value = "inProgress" onclick="check()">In Progress</option>
+                        <option value = "notStarted" onclick="check()">Not Started</option>
+                    </select>
+                </div>
+    
+                <div class = "sec"><input type="date" id="date"></div>
+            </form>
+        </section>
+    </div>
+
+    <!-- Remove Game Pop up -->
+    <div class = "popup" id = "removeGame">
+        <div class="pop-header">
+            <h1>Remove Game</h1>
+            <button data-popup-close class="close">&times;</button>
+        </div>
+    </div>
 
     <!--    flexbox container for the data output -->
     <section class = "flex">
@@ -49,6 +82,8 @@ Inputs:
         </div>
 
     </section>
+
+    <div id="overlay"></div>
     
 </body>
 </html>
